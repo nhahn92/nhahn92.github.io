@@ -43,8 +43,9 @@ nav a:hover {
     border-radius: 8px;
     margin-bottom: 20px;
 }
-h1, h2 {
+h1, h2, h3 {
     margin-top: 0;
+    letter-spacing: 2px;
 }
 a {
     color: #0066cc;
