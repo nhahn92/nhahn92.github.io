@@ -1,5 +1,8 @@
 body {
     font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     background: #f4f4f4;
@@ -48,7 +51,6 @@ a {
     text-decoration: none;
     position: relative;
 }
-
 a::after {
     content: "";
     position: absolute;
@@ -66,7 +68,7 @@ a:hover::after {
 footer {
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: auto;
     background: #222;
     color: #fff;
 }
