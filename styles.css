@@ -48,7 +48,7 @@ nav a::after {
 }
 h1, h2, h3 {
     display: inline-block;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 a {
     color: #0066cc;
