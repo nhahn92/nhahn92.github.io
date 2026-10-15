@@ -71,7 +71,7 @@ h1, h2, h3 {
 
 /* Global link styling */
 a {
-    color: #555; /* dark gray */
+    color: #555;
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
@@ -79,7 +79,7 @@ a {
 
 /* Hover color for content links */
 a:hover {
-    color: #222; /* darker gray */
+    color: #222;
 }
 
 /* Animated underline for content links */
