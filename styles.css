@@ -26,6 +26,7 @@ nav a {
     font-weight: bold;
 }
 nav a:hover {
+    color: light blue;
     text-decoration: none;
 }
 nav a::after {
@@ -51,9 +52,12 @@ h1, h2, h3 {
     letter-spacing: 2px;
 }
 a {
-    color: #0066cc;
+    color: gray;
     text-decoration: none;
     position: relative;
+}
+a:hover {
+    color: #004999;
 }
 a::after {
     content: "";
