@@ -37,9 +37,23 @@
     The process of enhancing this artifact taught me how important it is to think about performance and structure when working with data. One of the challenges I faced was understanding how the original application handled trip data, since some of the logic was scattered across multiple components and did not follow a consistent pattern. I had to reorganize the flow so that searching, sorting, and pagination worked together instead of competing with each other. This required careful planning and testing to ensure that each feature behaved correctly under different conditions.
     </p>
 
+    <img src="images/search-algorithm.png" alt="Search algorithm in trip-listing.component.ts" class="screenshot">
+
+    <div class="code-caption">
+        <strong>Enhanced Search Algorithm (applySearch)</strong><br>
+        This function implements a structured linear search across multiple fields—name, resort, and trip code while normalizing input for consistent matching. The original logic was scattered across components, but reorganizing it into a single predictable function improved clarity, maintainability, and performance. This example demonstrates my competency in applying systematic filtering and ensuring search integrates cleanly with pagination.
+    </div>
+
     <p>
     Another challenge was making sure the logic remained efficient even as the dataset increased. I had to consider how many operations were being performed, how often the data was being filtered or sorted, and how to avoid unnecessary recalculations. This experience helped me better understand the trade‑offs involved in designing algorithms for real applications, especially when working with user‑driven features like search and filtering.
     </p>
+
+    <img src="images/pagination-algorithm.png" alt="Pagination algorithm in trip-listing.component.ts" class="screenshot">
+
+    <div class="code-caption">
+        <strong>Pagination Algorithm (updatePagination)</strong><br>
+        This function computes page boundaries using <code>Math.ceil()</code> and array slicing to efficiently display only the relevant subset of trips. By centralizing pagination logic and ensuring it works in tandem with search, the enhanced version avoids redundant operations and scales cleanly as the dataset grows. This example demonstrates my competency in data structure manipulation and algorithmic efficiency within a real application.
+    </div>
 
     <p>
     Through this enhancement, I met course outcomes related to designing and evaluating computing solutions using algorithmic principles. I demonstrated my ability to analyze a problem, break it down into smaller parts, and implement a structured solution that improves performance and reliability. I also met outcomes related to software engineering by improving clarity, maintainability, and consistency within the codebase. I did not fully meet outcomes related to security in this enhancement, since those were addressed in other artifacts.
