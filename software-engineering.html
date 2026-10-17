@@ -37,6 +37,13 @@
     The process of enhancing this artifact taught me a great deal about evaluating existing systems and identifying areas where clarity and structure could be improved. One of the challenges I faced was understanding how the original application handled authentication and routing, since some parts of the code were outdated or inconsistent. I had to carefully trace how users logged in, how tokens were stored, and how access was granted to different parts of the application. This required patience and a willingness to break down the system piece by piece until I fully understood how it worked.
     </p>
 
+    <img src="images/software-engineering-token-decoding-logic.png" alt="Original token decoding logic from authentication.ts" class="code-image">
+
+    <div class="code-caption">
+        <strong>Original Token Decoding Logic (Frontend Authentication)</strong><br>
+        This screenshot shows how the Angular admin application manually decoded JWT payloads using <code>atob()</code> and direct JSON parsing. Understanding this flow was essential before modernizing the authentication structure, improving clarity, and ensuring predictable behavior across the application. This example demonstrates my competency in evaluating existing systems, identifying maintainability issues, and improving authentication workflows.
+    </div>
+
     <p>
     Another challenge was modernizing the Angular codebase. The original project used older patterns that have since been replaced by standalone components and more streamlined module organization. Updating these areas required research, testing, and verifying that the application still behaved correctly after the changes. These changes made the application more predictable and easier for future developers to maintain.
     </p>
@@ -44,6 +51,13 @@
     <p>
     Through this enhancement, I fully met several course outcomes. I demonstrated my ability to use innovative techniques and tools in computing practices by modernizing the Angular application and improving its architecture. I also demonstrated a security mindset by refining authentication and implementing role‑based access control. I met outcomes related to software engineering and design by improving maintainability, clarity, and structure. I did not fully meet outcomes related to algorithms or data structures in this enhancement, since those were addressed in a separate artifact.
     </p>
+
+    <img src="images/software-engineering-jwt-authentication-middleware.png" alt="Original admin-restricted route structure from index.js" class="code-image">
+
+    <div class="code-caption">
+        <strong>Original Admin‑Restricted Route Structure (Backend Routing)</strong><br>
+        This screenshot how the original Express API protected administrative trip operations using stacked middleware for JWT authentication and role‑based authorization. Analyzing this structure helped me understand how access control was implemented and where improvements were needed for clarity and maintainability. This example demonstrates my competency in refining routing logic, strengthening role‑based access control, and improving the overall structure of the application.
+    </div>
 </div>
 
 <footer>
