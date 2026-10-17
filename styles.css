@@ -71,10 +71,14 @@ h1, h2, h3 {
 
 /* Global link styling */
 a {
-    color: #555;
+    color: #c89b00; /* warm gold */
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f2c94c; /* same gold as nav hover */
 }
 
 /* Hover color for content links */
