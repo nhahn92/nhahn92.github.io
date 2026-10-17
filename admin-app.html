@@ -23,6 +23,7 @@
 
 <div class="container">
     <div class="banner" alt="An image of a man and a woman enjoying forest scenery together" style="background-image: url('images/admin-app-banner.jpg'); height: 200px;"></div>
+
     <h2>About the Application</h2>
 
     <p>
@@ -34,8 +35,8 @@
     </p>
 
     <p>
-        <strong>Email:</strong> admin@example.com<br>
-        <strong>Password:</strong> Password123!
+        Email: admin@example.com<br>
+        Password: Password123!
     </p>
 
     <p>
@@ -45,6 +46,59 @@
     <p>
         You can launch the admin interface <a href="https://travlr-getaways.netlify.app/">here</a>.
     </p>
+
+    <hr style="margin: 40px 0;">
+
+    <h2>Backend Architecture Note</h2>
+
+    <p>
+        The original Travlr Getaways application was built as a full MEAN‑stack system using MongoDB, Express, Angular, and Node.js, including JWT‑based authentication and persistent database storage.
+    </p>
+
+    <p>
+        For the purposes of CS‑499 demonstration and deployment, the admin interface was refactored to use Angular’s In‑Memory Web API, allowing the application to run entirely client‑side with dummy data and a temporary demo admin account.
+    </p>
+
+    <p>
+        This allows the authentication flow, role‑based access control, CRUD operations, validation, sanitization, and pagination to be evaluated directly in the live Netlify deployment without requiring a hosted backend.
+    </p>
+
+    <p>
+        The complete original MEAN‑stack implementation remains available in a separate GitHub repository, found <a href="https://github.com/nhahn92/CS-499">here</a>.
+    </p>
+
+    <hr style="margin: 40px 0;">
+
+    <h2>Application Screenshots and Feature Overview</h2>
+
+    <h3>Login Page</h3>
+    <p>This screenshot shows the admin login form used to access restricted features within the Travlr Getaways application.</p>
+    <img src="images/Travlr-Getaways-Login.png" alt="Login page screenshot" class="screenshot">
+
+    <h3>Trip Listing Page</h3>
+    <p>This page displays all trips retrieved from the in‑memory backend and allows for searching, filtering, pagination, and role‑restricted CRUD controls.</p>
+    <img src="images/Travlr-Getaways-Destinations.png" alt="Trip listing screenshot" class="screenshot">
+
+    <h3>Add Trip Page</h3>
+    <p>This form allows administrators to create new trips.</p>
+    <img src="images/Travlr-Getaways-Add-Trip.png" alt="Add trip screenshot" class="screenshot">
+
+    <h3>Edit Trip Page</h3>
+    <p>This page allows administrators to update details for existing trips.</p>
+    <img src="images/Travlr-Getaways-Edit-Trip.png" alt="Edit trip screenshot" class="screenshot">
+
+    <h3>Delete Confirmation</h3>
+    <p>This screenshot shows the confirmation dialog that appears before removing a trip.</p>
+    <img src="images/Travlr-Getaways-Delete-Trip.png" alt="Delete confirmation screenshot" class="screenshot">
+
+    <h3>Pagination and Sample Data</h3>
+    <p>This view shos how additional sample trips populate subsequent pages, demonstrating enhanced pagination logic.</p>
+    <img src="images/Travlr-Getaways-Destinations-Page-4.png" alt="Pagination screenshot" class="screenshot">
+
+    <h3>Search Functionality</h3>
+    <p>This screenshot shows the dynamic search feature, which filters trips by name, resort, or code in real time.</p>
+    <img src="images/Travlr-Getaways-Search-Filter.png" alt="Search screenshot" class="screenshot">
+
 </div>
 
 <footer>
