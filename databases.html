@@ -33,6 +33,13 @@
     I included this artifact in my ePortfolio because it shows how I transformed the database layer by improving validation, adding sanitization, refining error handling, and implementing aggregation pipelines. These enhancements made the application more reliable and more secure. They also demonstrate my skills in designing predictable data flows, preventing malformed input, and ensuring that the database returns consistent and meaningful results. The improvements I made highlight my ability to work with schemas, enforce structure, and build server‑side logic that supports a full‑stack application.
     </p>
 
+    <img src="images/databases-aggregation-pipeline.png" alt="Aggregation pipeline in trips.js" class="screenshot">
+
+    <div class="code-caption">
+        <strong>MongoDB Aggregation Pipeline for Trip Summary</strong><br>
+        This aggregation pipeline computes high-level analytics such as total trips, average price, average length, and resort distribution. The enhanced version provides structured, meaningful results that support both administrative decision-making and frontend reporting. This example demonstrates my competency in database design, data processing, and building predictable server-side logic.
+    </div>
+
     <p>
     The process of enhancing this artifact taught me how important it is to think carefully about how data enters and moves through a system. One of the challenges I faced was understanding how the original project handled validation, since some fields were loosely defined or not validated at all. I had to redesign the schema so that each field had clear requirements and constraints. This required reviewing the existing data, identifying inconsistencies, and determining what rules would best support the application’s needs.
     </p>
@@ -40,6 +47,15 @@
     <p>
     Another challenge was improving error handling and sanitization. The original code did not always provide clear messages when something went wrong, and some inputs were not sanitized before being stored. I updated the API so that errors were descriptive and helpful, which makes debugging easier and improves the user experience. I also added sanitization to prevent unsafe or malformed data from entering the database. These changes helped me better understand how secure coding practices apply to real applications and how small improvements can significantly reduce risk.
     </p>
+
+    <img src="images/databases-sanitization-logic-1.png" alt="Sanitization logic in trips.js" class="screenshot">
+
+    <img src="images/databases-sanitization-logic-2.png" alt="Sanitization logic in trips.js, continued" class="screenshot">
+
+    <div class="code-caption">
+        <strong>Sanitization Logic for Incoming Trip Data</strong><br>
+        These screenshots show how all incoming string fields are sanitized using <code>sanitize-html</code> before being stored in MongoDB. The original project did not sanitize inputs, which created risks for unsafe or malformed data. Adding this logic strengthened the database layer by enforcing clean, predictable input and reducing potential vulnerabilities. This example demonstrates my competency in secure database design and server-side validation.
+    </div>
 
     <p>
     Through this enhancement, I met course outcomes related to using innovative techniques and tools in computing practices, especially in the context of database design and server‑side development. I implemented solutions that deliver value by improving reliability, structure, and security. I also met outcomes related to developing a security mindset, since the enhancements focused heavily on validation, sanitization, and reducing potential vulnerabilities. I did not fully meet outcomes related to algorithms in this enhancement, since those were addressed in a separate artifact.
