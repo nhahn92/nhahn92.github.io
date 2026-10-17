@@ -15,6 +15,21 @@ header {
     color: #fff;
     text-align: center;
     padding: 30px 0;
+    border-bottom: 3px solid #f2c94c;
+}
+
+header h1 {
+    font-size: 2.2em;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+header p {
+    font-size: 1em;
+    opacity: 0.85;
+}
+
+header h1, header p {
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
 /* Navigation */
