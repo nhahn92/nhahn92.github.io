@@ -100,10 +100,6 @@ a:hover {
     color: #f2c94c;
 }
 
-a:hover {
-    color: #222;
-}
-
 /* Animated underline for content links */
 a::after {
     content: "";
